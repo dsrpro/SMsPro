@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/cardview_dark_background"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".MainActivity"
+    tools:showIn="@layout/activity_main">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/txtPhone"
+            android:layout_width="match_parent"
+            android:layout_height="64dp"
+            android:ems="10"
+            android:inputType="phone" />
+
+        <EditText
+            android:id="@+id/editMessage"
+            android:layout_width="match_parent"
+            android:layout_height="238dp"
+            android:ems="10"
+            android:gravity="top"
+            android:inputType="textMultiLine" />
+
+        <Button
+            android:id="@+id/btnEnvoi"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Envoi Méssage" />
+
+    </LinearLayout>
+</android.support.constraint.ConstraintLayout>
